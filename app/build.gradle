@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        applicationId "com.org.kulture.kulture"
+        minSdkVersion 14
+        targetSdkVersion 25
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile files('libs/PayPalAndroidSDK-2.8.5.jar')
+    compile files('libs/volley.jar')
+
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'org.immutables:gson:2.1.0.alpha'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.google.firebase:firebase-core:11.0.2'
+    compile 'com.google.android.gms:play-services-maps:11.0.2'
+    compile 'com.google.android.gms:play-services-auth:11.0.2'
+    compile 'com.google.android.gms:play-services-gcm:11.0.2'
+    compile 'com.google.firebase:firebase-messaging:11.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'me.relex:circleindicator:1.2.2@aar'
+    compile 'com.facebook.android:facebook-android-sdk:4.4.0'
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'

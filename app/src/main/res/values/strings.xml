@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Kulture</string>
+    <string name="title_activity_introscreen">Introscreen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Your Kulture</string>
+    <string name="slide_1_desc">Kulture is the top Aboriginal fashion clothing company with the best quality indigenous fashion wear brands.</string>
+    <string name="slide_2_title">Your Order</string>
+    <string name="slide_title2">Vending Machine</string>
+    <string name="title_activity_loginscreen">Loginscreen</string>
+    <string name="forgot">Forgot Password ?</string>
+    <string name="slide_2_desc">Once their payment is verified, their access is granted automatically; there\'s no need for you to manually send them an additional email or log in to update their order. It\'s quick and easy for both you and the Kulture!</string>
+    <string name="slide_3_desc">Vending machine will provides items such as wide variety of trendy casual wear, party wear, office wear, team wear in the form of T-shirts, hoodies, Polos, compression wear tights, shorts you after money or a password is inserted into the machine.</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_homescreen">Homescreen</string>
+    <string name="title_activity_forgot">Forgotscreen</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="defaultText">Choose an option</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_account">MyAccount</string>
+    <string name="terms"><u>Returns Address</u></string>
+    <string name="title_activity_product_detail">ProductDetail</string>
+    <string name="title_activity_category_list">CategoryListActivity</string>
+    <string name="title_activity_machine">MachineActivity</string>
+    <string name="title_activity_order__details">Order_Details</string>
+    <string name="title_activity_new__arrivals_">New_Arrivals_Activity</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="tems"><u>Terms of Sale.</u></string>
+    <string name="title_activity_delivery">Delivery_Activity</string>
+    <string name="title_activity_billing__address">Billing_Address_Activity</string>
+    <string name="title_activity_wish_list">WishList</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_help__center">Help_Center</string>
+    <string name="title_activity_inquiry__form">Inquiry_Form</string>
+    <string name="title_activity_sport_items_list">SportItemsList</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_Payment_Sucess">PaymentSucess</string>
+    <string name="title_activity_delivery__address_">Delivery_Address_Activity</string>
+
+    <string name="checkout">Checkout</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="title_activity_sports_sub">SportsSubActivity</string>
+    <string name="title_activity_corporate__wear">Corporate_Wear</string>
+    <string name="title_activity_product_detail_sub">ProductDetailSub</string>
+    <string name="title_activity_product_detail_sub_sub">ProductDetailSubSub</string>
+    <string name="done">DONE</string>
+    <string name="ship">Ship to a different address?</string>
+    <string name="gmail">Gmail</string>
+    <string name="title_activity_gmail">GmailActivity</string>
+    <string name="facebook_app_id">194334134467784</string>
+    <string name="title_activity_design_your_own">DesignYourOwn</string>
+
+</resources>

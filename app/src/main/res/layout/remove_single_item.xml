@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/colorgradient"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:textColor="@color/white"
+                android:text="Are you sure you want to remove this item ?"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/comment_done"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:background="@drawable/submit_button"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="REMOVE"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/comment_cancels"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:background="@drawable/submit_button"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="CANCEL"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

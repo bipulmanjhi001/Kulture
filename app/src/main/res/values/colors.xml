@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B1240D</color>
+    <color name="colorPrimaryDark">#e9b63427</color>
+    <color name="colorAccent">#d1b63427</color>
+    <color name="white">#ffffff</color>
+    <color name="background">#9ee40404</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="pink">#FF4081</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deepblue">#7C4DFF</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#448AFF</color>
+    <color name="lightblue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#4CAF50</color>
+    <color name="lightgreen">#8BC34A</color>
+    <color name="lime">#CDDC39</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange">#FF9800</color>
+    <color name="deeporange">#FF5722</color>
+    <color name="brown">#795548</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="bluegrey">#607D8B</color>
+
+    <!--Material Colors-->
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="secondary_text_transparent_70">#B3727272</color>
+
+    <color name="divider">#B6B6B6</color>
+
+    <color name="chrome_grey">#F2F2F2</color>
+
+    <color name="trans_black_75">#BF000000</color>
+
+    <color name="trans_black_50">#80000000</color>
+
+    <color name="trans_black_25">#40000000</color>
+
+    <color name="green_theme">#017C67</color>
+    <color name="green_theme_dark">#00715C</color>
+    <color name="green_theme_pink">#AF3F3F</color>
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <!-- Screens background color-->
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#afafaf</color>
+    <color name="dot_dark_screen2">#afafaf</color>
+    <color name="dot_dark_screen3">#afafaf</color>
+    <color name="dot_dark_screen4">#afafaf</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#B1240D</color>
+    <color name="dot_light_screen2">#B1240D</color>
+    <color name="dot_light_screen3">#B1240D</color>
+    <color name="dot_light_screen4">#B1240D</color>
+    <color name="black">#000</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="btn_bg_checkout">#428bca</color>
+    <color name="lbl_product_name">#333333</color>
+    <color name="lbl_product_description">#444444</color>
+    <color name="bg_msg_you">#5eb964</color>
+    <color name="bg_msg_from">#e5e7eb</color>
+    <color name="msg_border_color">#a1a1a1</color>
+    <color name="bg_btn_join">#1e6258</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="lblFromName">#777777</color>
+</resources>

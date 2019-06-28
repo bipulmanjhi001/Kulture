@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/product_detail_layout"
+    tools:context="com.org.kulture.kulture.ProductDetail">
+
+    <include layout="@layout/content_product_detail" />
+    <com.org.kulture.kulture.model.FooterBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/butoon_background"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:id="@+id/footerbar_product_details"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/add_to_cart"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/ic_empty_shopping_cart"
+                    android:layout_height="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="ADD TO CART"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/product_buy_now"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#000000"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="BUY NOW"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.org.kulture.kulture.model.FooterBarLayout>
+
+    <include layout="@layout/productdetails_toolbar" />
+</android.support.design.widget.CoordinatorLayout>

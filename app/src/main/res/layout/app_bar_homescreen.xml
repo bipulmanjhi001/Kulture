@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_main"
+    xmlns:local="http://schemas.android.com/tools"
+    tools:context="com.org.kulture.kulture.Homescreen">
+
+    <include layout="@layout/content_homescreen" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        local:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/logo" />
+
+        <RelativeLayout
+            android:id="@+id/check_cart_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/check_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end|center_horizontal"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/ic_notifications_button" />
+
+            <ImageView
+                android:id="@+id/home_prescription_cart"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_empty_shopping_cart" />
+
+            <RelativeLayout
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignRight="@+id/home_prescription_cart"
+                android:layout_alignTop="@+id/home_prescription_cart"
+                android:background="@drawable/circle"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp">
+
+                <TextView
+                    android:id="@+id/cart_counts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.org.kulture.kulture.NotificationShow">
+
+    <include layout="@layout/order_details_toolbar"/>
+    <LinearLayout
+        android:id="@+id/check_notifications"
+        android:layout_width="match_parent"
+        android:layout_marginTop="53dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:translationZ="2dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top" />
+        <ListView
+            android:id="@+id/notificationlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emptyElement"
+            android:text="Notification list is empty !!"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

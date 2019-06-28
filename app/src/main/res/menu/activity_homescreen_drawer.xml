@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_trucking"
+            android:title="My Orders" />
+
+    </group>
+
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/rate_us"
+                    android:icon="@drawable/ic_star_black_24dp"
+                    android:title="Rate Us" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_email"
+                    android:icon="@drawable/ic_mail_grey600_24dp"
+                    android:title="Mail Us" />
+                <item
+                    android:id="@+id/nav_call"
+                    android:icon="@drawable/ic_old_typical_phone"
+                    android:title="Call Us" />
+                <item
+                    android:id="@+id/nav_return"
+                    android:icon="@drawable/ic_return"
+                    android:title="Return &amp; Refund" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_about_us"
+                    android:title="About Us" />
+            </menu>
+        </item>
+</menu>

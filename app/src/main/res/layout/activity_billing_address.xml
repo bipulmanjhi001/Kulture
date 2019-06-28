@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.org.kulture.kulture.Billing_Address_Activity">
+
+    <include layout="@layout/custom_billing_toolbar"/>
+
+    <include layout="@layout/content_billing__address"/>
+    <com.org.kulture.kulture.model.FooterBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/butoon_background"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:id="@+id/billing_update"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="UPDATE"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.org.kulture.kulture.model.FooterBarLayout>
+</android.support.design.widget.CoordinatorLayout>

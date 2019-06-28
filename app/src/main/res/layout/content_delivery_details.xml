@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:background="#fff2f2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.org.kulture.kulture.Delivery_Details"
+    tools:showIn="@layout/activity_delivery_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/delivery_address"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/price_details"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/apply_coupon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/apply_coupon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/terms_condition"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

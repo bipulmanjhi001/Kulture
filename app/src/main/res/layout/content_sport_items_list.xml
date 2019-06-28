@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.org.kulture.kulture.SportItemsList"
+    tools:showIn="@layout/activity_sport_items_list">
+    <LinearLayout
+        android:id="@+id/just_click"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/category_name_sport"
+            android:layout_width="match_parent"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:translationZ="2dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+        <com.org.kulture.kulture.model.ExpandableHeightGridView
+            android:id="@+id/load_sport_wear_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:horizontalSpacing="10dp"
+            android:isScrollContainer="false"
+            android:numColumns="2"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

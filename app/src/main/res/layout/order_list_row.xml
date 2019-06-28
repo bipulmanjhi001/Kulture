@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/list_row_selector"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="4dp"
+        android:translationZ="2dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:padding="3dip"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:scaleType="centerCrop"
+            android:background="@drawable/noimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/ord_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c4040404"
+        android:typeface="sans"
+        android:textSize="16dip"
+        android:textStyle="bold"/>
+
+    <!-- Artist Name -->
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/artist"
+        android:layout_margin="6dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#343434"
+        android:textSize="12dip"
+        android:layout_marginTop="1dip"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/order_id"
+                    android:layout_margin="4dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:textColor="#343434"
+                    android:textSize="12dip"
+                    android:layout_marginTop="1dip"/>
+
+    <!-- Rightend Duration -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="&#36;"
+                        android:layout_marginRight="5dip"
+                        android:textSize="14dip"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"/>
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/paid_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginRight="5dip"
+        android:textSize="14dip"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_margin="6dp"
+                        android:id="@+id/qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginRight="5dip"
+                        android:textSize="14dip"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_margin="6dp"
+                        android:id="@+id/extra_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:visibility="gone"
+                        android:layout_marginRight="5dip"
+                        android:textSize="14dip"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

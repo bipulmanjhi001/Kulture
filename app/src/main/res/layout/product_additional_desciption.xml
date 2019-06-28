@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+        <com.org.kulture.kulture.model.MyTextView
+            android:id="@+id/product_weight_text"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="Weight :"
+            android:visibility="gone"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            app:font="Roboto-Regular.ttf"
+            android:layout_height="wrap_content" />
+
+        <com.org.kulture.kulture.model.MyTextView
+            android:id="@+id/product_weight"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:visibility="gone"
+            app:font="Roboto-Regular.ttf"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content">
+            <com.org.kulture.kulture.model.MyTextView
+                android:id="@+id/product_upc_text"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="UPC :"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                app:font="Roboto-Regular.ttf"
+                android:layout_height="wrap_content" />
+
+            <com.org.kulture.kulture.model.MyTextView
+                android:id="@+id/product_upc"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:visibility="gone"
+                app:font="Roboto-Regular.ttf"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <com.org.kulture.kulture.model.MyTextView
+            android:id="@+id/product_size_text"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="Size :"
+            android:textSize="14dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            app:font="Roboto-Regular.ttf"
+            android:layout_height="wrap_content" />
+
+        <com.org.kulture.kulture.model.MyTextView
+            android:id="@+id/product_sizelist"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:visibility="gone"
+            app:font="Roboto-Regular.ttf"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

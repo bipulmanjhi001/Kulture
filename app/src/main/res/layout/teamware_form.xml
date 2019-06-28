@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Do you want a name on back of shirt ? * "
+        android:textSize="14dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="Yes"
+            android:id="@+id/radioButton1"
+            android:checked="false"
+            android:textSize="13dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:textSize="13dp"
+            android:layout_weight="0.13" />
+    </RadioGroup>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/form_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="16sp"
+        android:translationZ="1dp"
+        app:met_baseColor="@color/trans_black_75"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="30"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text=" Do you want a number on back of shirt ? * "
+        android:textSize="14dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup2">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="Yes"
+            android:id="@+id/radioButton3"
+            android:checked="false"
+            android:textSize="13dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/radioButton4"
+            android:checked="false"
+            android:textSize="13dp"
+            android:layout_weight="0.13" />
+    </RadioGroup>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/form_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Number"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="16sp"
+        android:translationZ="1dp"
+        app:met_baseColor="@color/trans_black_75"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="30"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+</LinearLayout>

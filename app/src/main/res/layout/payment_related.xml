@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="2dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/getpolicytext"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="What is your return policy?"
+                android:layout_margin="3dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#860101"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/payment_related_queries"
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_add"
+                android:layout_height="20dp" />
+            <ImageView
+                android:id="@+id/payment_related_queries_collepse"
+                android:layout_width="30dp"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_minus"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/expend_payment_queries"
+        android:layout_width="match_parent"
+        android:background="#fffafa"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/help_a3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Two things you need to know: You must return your garments within 30 days of receiving your gear. "
+                android:layout_margin="10dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#1e1e1e"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/help_a4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text=" It needs to be unwashed and unworn (You can of course try it on)."
+                android:layout_margin="10dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#1e1e1e"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/help_a5"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Sorry, but if the garments show signs of being worn we can’t accept them."
+                android:layout_margin="10dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#1e1e1e"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

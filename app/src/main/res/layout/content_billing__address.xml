@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.org.kulture.kulture.Billing_Address_Activity"
+    tools:showIn="@layout/activity_billing_address">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Billing details"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/f_name_billing"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="10dp"
+                android:hint="First Name *"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="15"
+                app:met_primaryColor="?colorAccent" />
+
+            <requestFocus/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/l_name_billing"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:hint="Last Name *"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="16sp"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="15"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email_billing"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Register Email Address *"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="80"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/organization_quote"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:hint="Organisation Name *"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="70"
+            app:met_primaryColor="?colorAccent" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/mob_billing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:hint="Mobile Number *"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            android:textSize="16sp"
+            app:met_primaryColor="?colorAccent" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/address_billing"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Address *"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="150"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/pin_billing"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:hint="Post Code *"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="?colorAccent" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/city_billing"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:hint="City *"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/state_billing"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:hint="State *"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/country_billing"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:hint="Country *"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="16sp"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="50"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+          <CheckBox
+            android:id="@+id/checkbox_ship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ship"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/add_shiping_address"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+           <include layout="@layout/shipping_address"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

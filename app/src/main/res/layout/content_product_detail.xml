@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="#fff2f2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.org.kulture.kulture.ProductDetail"
+    tools:showIn="@layout/activity_product_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+          <com.org.kulture.kulture.model.MyTextView
+              android:id="@+id/product_name"
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:textSize="18dp"
+              android:textColor="@color/black"
+              app:font="Roboto-Regular.ttf"
+              android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/whishlist_off"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:background="@drawable/ic_heartcircle"
+                    android:layout_height="24dp" />
+                <ImageView
+                    android:id="@+id/whishlist_on"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_heartfeel"
+                    android:layout_height="24dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:background="#c2c2c2"
+           android:layout_height="0.5dp"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/show_image"
+               android:layout_width="match_parent"
+               android:layout_height="340dp"/>
+           <include layout="@layout/select_image"/>
+       </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#c2c2c2"
+            android:layout_height="0.5dp"/>
+        <ProgressBar
+            android:id="@+id/progress_dailog"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/product_details_show"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/select_product_details"/>
+
+    </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progress_dailog2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/teamwear_active"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#c2c2c2"
+                android:layout_height="0.5dp"/>
+
+            <include layout="@layout/teamware_form"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#c2c2c2"
+            android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_margin="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Product Description"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#c2c2c2"
+            android:layout_height="0.5dp"/>
+
+     <include layout="@layout/product_desciption"/>
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#c2c2c2"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="Additional Information"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:background="#c2c2c2"
+                android:layout_height="0.5dp"/>
+
+            <include layout="@layout/product_additional_desciption"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#c2c2c2"
+            android:layout_height="0.5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="14dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/related_product_text"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#080808"
+                        android:textStyle="bold"
+                        android:text="RELATED PRODUCTS"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#c2c2c2"
+                    android:layout_height="0.5dp"/>
+
+            </LinearLayout>
+            <include layout="@layout/related_product"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/kulture_footer_details"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

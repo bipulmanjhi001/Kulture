@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:text="Get A Quote"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/f_name_quote"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:hint="First Name *"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="?colorAccent" />
+
+        <requestFocus/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/l_name_quote"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/email_quote"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Email *"
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="16sp"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="30"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/organization_quote"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:hint="Organisation Name *"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="70"
+            app:met_primaryColor="?colorAccent" />
+
+    </LinearLayout>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/phone_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:hint="Phone No."
+        android:inputType="number"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="15"
+        android:textSize="16sp"
+        app:met_primaryColor="?colorAccent" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:textSize="14dp"
+          android:textColor="#1d1c1c"
+          android:text="What Styles are you interested in? *"
+          android:layout_height="wrap_content" />
+      <LinearLayout
+          android:id="@+id/styles"
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_marginLeft="20dp"
+          android:layout_marginBottom="10dp"
+          android:layout_height="wrap_content">
+          <CheckBox
+              android:id="@+id/styles_adult"
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:text="Adult's / Unisex Polos"
+              android:textSize="13dp"
+              android:layout_height="wrap_content" />
+          <CheckBox
+              android:id="@+id/styles_women"
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:text="Women's Fitted Polos"
+              android:textSize="13dp"
+              android:layout_height="wrap_content" />
+          <CheckBox
+              android:id="@+id/style_kids"
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:text="Kid's / Youth Polos"
+              android:textSize="13dp"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+  </LinearLayout>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/est_qty_quote"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Estimated Quantity * (Minimum 15)"
+        android:inputType="number"
+        android:minLines="2"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="16sp"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="2"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/desired_date_quote"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:hint="Desired date *"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="10"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/delivery_quote"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Delivery Location *"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/quote_background"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/spinner_choose_design"
+        android:layout_width="match_parent"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="14dp"
+            android:textColor="#262525"
+            android:text="Are you interested in any promotional products?"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/promotional_yes"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="Yes"
+                    android:textSize="13dp"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/promotional_no"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="No"
+                    android:textSize="13dp"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/additional_comments"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:hint="Additional Comments / Instructions"
+            android:inputType="textMultiLine"
+            android:layout_gravity="left"
+            android:gravity="top|left"
+            android:textColor="@color/black"
+            android:lines="5"
+            android:scrollHorizontally="false"
+            android:background="@drawable/quote_background"
+            android:textCursorDrawable="@drawable/text_cursor_cyan"
+            android:textSize="16sp"
+            android:layout_height="120dp" />
+
+        <LinearLayout
+            android:id="@+id/submit"
+            android:layout_width="160dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sign_in_button"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="SUBMIT"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="140dp"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="130dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="120dp">
+                        <ImageView
+                            android:id="@+id/cor_img"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/cor_name"
+                            android:layout_width="match_parent"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/cor_url"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/cor_url2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/cor_id"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/cor_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#919191"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="0.5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="READ MORE"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

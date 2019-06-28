@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:background="#fff2f2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.org.kulture.kulture.Help_Center"
+    tools:showIn="@layout/activity_help_center">
+    <LinearLayout
+        android:id="@+id/check_wishlist"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/account_related_queries"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/privacy_policy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/payment_related"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/terms_conditions_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/shipping_related_queries"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/help_center_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/error_report"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/log_out_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/log_out"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

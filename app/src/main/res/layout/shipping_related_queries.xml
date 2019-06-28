@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="2dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="What return options can I choose from?"
+                android:layout_margin="3dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#860101"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/shipping_related_queries"
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_add"
+                android:layout_height="20dp" />
+            <ImageView
+                android:id="@+id/shipping_related_queries_collepse"
+                android:layout_width="30dp"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_minus"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/expend_shipping_queries"
+        android:layout_width="match_parent"
+        android:background="#fffafa"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/help_a6"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="What return options can I choose from?"
+                android:layout_margin="10dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#1e1e1e"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/help_a7"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="You may select a refund or a 110% store credit. Why is 110% store credit? If you choose a store credit we will throw in a 10% bonus for you.We can’t do straight up exchanges due to us only carrying small stock quantities and we also can’t hold items unfortunately. You will be notified via email once your order is refunded or your store credit has been issued. "
+                android:layout_margin="10dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#1e1e1e"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.org.kulture.kulture.MyAccount">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#a9240e"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <include layout="@layout/custom_toolbar"/>
+
+    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/content_my_account" />
+
+    <com.org.kulture.kulture.model.FooterBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/kulture_footer"/>
+
+        </LinearLayout>
+    </com.org.kulture.kulture.model.FooterBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

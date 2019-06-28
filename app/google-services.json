@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "426067819675",
+    "firebase_url": "https://kulture-e559f.firebaseio.com",
+    "project_id": "kulture-e559f",
+    "storage_bucket": "kulture-e559f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426067819675:android:e5b382ff9503f0e6",
+        "android_client_info": {
+          "package_name": "com.org.kulture.kulture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426067819675-kf7vjaopidorgua5t8e0m2hn1po7flhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.org.kulture.kulture",
+            "certificate_hash": "c7a91e2537373bef34f8dc5b713d528feccd43ab"
+          }
+        },
+        {
+          "client_id": "426067819675-l4vgmg7appc0ahsvu0sm354mm3c9s0bk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwZ837QrPWffa-cyvH1mVBaaP9nJrXGms"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426067819675-l4vgmg7appc0ahsvu0sm354mm3c9s0bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

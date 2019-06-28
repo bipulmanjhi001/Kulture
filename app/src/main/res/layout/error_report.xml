@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="What if I received a faulty item?"
+                android:layout_margin="3dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#860101"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/shipping_error_queries"
+                android:layout_weight="1"
+                android:layout_width="40dp"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_add"
+                android:layout_height="20dp" />
+            <ImageView
+                android:id="@+id/shipping_error_queries_collepse"
+                android:layout_width="30dp"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_minus"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/expend_error_queries"
+        android:layout_width="match_parent"
+        android:background="#fffafa"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/help_a8"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="We apologise if you have. Kulture is a quality freak but these things happen. If you have received a faulty item please email admin@kulture.biz and we will do our best to replace them for you."
+                android:layout_margin="10dp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#1e1e1e"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

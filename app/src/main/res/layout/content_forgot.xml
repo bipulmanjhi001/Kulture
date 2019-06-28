@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.org.kulture.kulture.ForgotActivity"
+    tools:showIn="@layout/activity_forgot">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/logo"
+            android:layout_height="90dp" />
+
+        <com.org.kulture.kulture.model.MyTextView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            app:font="Roboto-Regular.ttf"
+            android:text="Enter the Email id that you used to sign up on Kulture."
+            android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/forgot_password_edit"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="16sp"
+        app:met_baseColor="@color/black"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="11"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/forgot_submit"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/sign_in_button"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:text="SUBMIT"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
